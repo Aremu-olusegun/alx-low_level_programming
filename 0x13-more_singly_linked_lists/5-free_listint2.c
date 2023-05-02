@@ -1,3 +1,6 @@
+#include "lists.h"
+
+
 /**
  *free_listint2 - Frees a list.
  *@head: Address of the first node of a list.
