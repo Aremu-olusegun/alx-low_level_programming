@@ -49,6 +49,5 @@ return (new_node);
 
 temp = temp->next;
 i++;
-
 } while (1);
 }
