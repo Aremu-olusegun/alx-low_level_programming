@@ -1,14 +1,14 @@
 #include "lists.h"
 
 /**
-* my_free_listint_safe - Frees a listint_t list
+* free_listint_safe - Frees a listint_t list
 *
 * @h: listint_t double pointer
 *
 * Return: size_t
 */
 
-size_t my_free_listint_safe(listint_t **h)
+size_t free_listint_safe(listint_t **h)
 {
 	/* Initialize variables */
 	size_t count = 0;
@@ -25,7 +25,7 @@ size_t my_free_listint_safe(listint_t **h)
 	head = *h;
 
 	/* Traverse the list */
-	while (head)
+	while (head != NULL)
 	{
 		count++;
 		count2 = head->next - head;
@@ -46,4 +46,3 @@ size_t my_free_listint_safe(listint_t **h)
 
 	return (count);
 }
-
